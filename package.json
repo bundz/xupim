@@ -4,7 +4,7 @@
   "description": "A url requester by template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/jshint lib/ specs/ && ./node_modules/.bin/mocha specs/"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,10 @@
   "homepage": "https://github.com/bundz/xupim",
   "dependencies": {
     "axios": "^0.5.0"
+  },
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "jshint": "^2.6.0",
+    "mocha": "^2.1.0"
   }
 }
